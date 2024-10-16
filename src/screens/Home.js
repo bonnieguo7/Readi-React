@@ -10,6 +10,9 @@ const Home = ({ navigation }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Recommendations')}>
           <Text style={styles.linkText}>Go to Recommendations</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+          <Text style={styles.linkText}>Go to Search</Text>
+        </TouchableOpacity>
       </View>
     );
   };

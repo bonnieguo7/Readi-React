@@ -60,6 +60,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: '600',
         textAlign: 'center',
+        fontFamily: 'Times New Roman'
       },
       subtext: {
         color: 'gray',
@@ -76,8 +77,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
       },
       statNumber: {
-        fontSize: 20,
-        fontWeight: 'bold',
+        fontSize: 19
       },
       circle: {
         width: 100,

@@ -7,7 +7,7 @@ const Recommendations = () => {
             <View style={styles.titleContainer}>
                 <Text style={styles.title}>Recommendations</Text>
             </View>
-            <View style={styles.book}>
+            <View style={styles.books}>
                 <View style={styles.bookContainer}>
                     <View style={styles.circle}>
                         <Text style={styles.number}>1</Text>
