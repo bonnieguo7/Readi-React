@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-const Recommendations = () => {
+const Recommendations = ({ navigation}) => {
     return (
         <View style={styles.container}>
             <View style={styles.titleContainer}>
@@ -12,11 +12,25 @@ const Recommendations = () => {
                     <View style={styles.circle}>
                         <Text style={styles.number}>1</Text>
                     </View>
-                    <Image source={{uri: 'https://books.google.com/books/content?id=NLVPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'}}
-                        style={styles.coverImage}>
-                    </Image>
+                    <TouchableOpacity onPress={() => navigation.navigate('Book', { 
+                        title: 'The Girl on the Train',
+                        author: 'Paula Hawkins',
+                        genre: 'Thriller',
+                        coverImage: 'https://books.google.com/books/content?id=NLVPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'
+                    })}>
+                        <Image source={{uri: 'https://books.google.com/books/content?id=NLVPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'}}
+                            style={styles.coverImage}>
+                        </Image>
+                    </TouchableOpacity>
                     <View style={styles.detailsContainer}>
-                        <Text style={styles.bookTitle}>The Girl on the Train</Text>
+                        <TouchableOpacity onPress={() => navigation.navigate('Book', { 
+                            title: 'The Girl on the Train',
+                            author: 'Paula Hawkins',
+                            genre: 'Thriller',
+                            coverImage: 'https://books.google.com/books/content?id=NLVPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'
+                        })}>
+                            <Text style={styles.bookTitle}>The Girl on the Train</Text>
+                        </TouchableOpacity>
                         <Text style={styles.bookAuthor}>Paula Hawkins | Thriller</Text>
                     </View>
                 </View>
@@ -24,11 +38,25 @@ const Recommendations = () => {
                     <View style={styles.circle}>
                         <Text style={styles.number}>2</Text>
                     </View>
-                    <Image source={{uri: 'https://books.google.com/books/content?id=Eka9DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api'}}
-                        style={styles.coverImage}>
-                    </Image>
+                    <TouchableOpacity onPress={() => navigation.navigate('Book', { 
+                        title: 'It Ends With Us',
+                        author: 'Colleen Hoover',
+                        genre: 'Romance',
+                        coverImage: 'https://books.google.com/books/content?id=Eka9DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api'
+                    })}>
+                        <Image source={{uri: 'https://books.google.com/books/content?id=Eka9DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api'}}
+                            style={styles.coverImage}>
+                        </Image>
+                    </TouchableOpacity>
                     <View style={styles.detailsContainer}>
-                        <Text style={styles.bookTitle}>It Ends With Us</Text>
+                        <TouchableOpacity onPress={() => navigation.navigate('Book', { 
+                            title: 'It Ends With Us',
+                            author: 'Colleen Hoover',
+                            genre: 'Romance',
+                            coverImage: 'https://books.google.com/books/content?id=Eka9DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api'
+                        })}>
+                            <Text style={styles.bookTitle}>It Ends With Us</Text>
+                        </TouchableOpacity>
                         <Text style={styles.bookAuthor}>Colleen Hoover | Romance</Text>
                     </View>
                 </View>
@@ -36,11 +64,25 @@ const Recommendations = () => {
                     <View style={styles.circle}>
                         <Text style={styles.number}>3</Text>
                     </View>
-                    <Image source={{uri: 'https://books.google.com/books/content?id=jBaNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'}}
-                        style={styles.coverImage}>
-                    </Image>
+                    <TouchableOpacity onPress={() => navigation.navigate('Book', { 
+                        title: 'Red Rising',
+                        author: 'Pierce Brown',
+                        genre: 'Science Fiction',
+                        coverImage: 'https://books.google.com/books/content?id=jBaNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'
+                    })}>
+                        <Image source={{uri: 'https://books.google.com/books/content?id=jBaNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'}}
+                            style={styles.coverImage}>
+                        </Image>
+                    </TouchableOpacity>
                     <View style={styles.detailsContainer}>
-                        <Text style={styles.bookTitle}>Red Rising</Text>
+                        <TouchableOpacity onPress={() => navigation.navigate('Book', { 
+                            title: 'Red Rising',
+                            author: 'Pierce Brown',
+                            genre: 'Science Fiction',
+                            coverImage: 'https://books.google.com/books/content?id=jBaNEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api'
+                        })}>
+                            <Text style={styles.bookTitle}>Red Rising</Text>
+                        </TouchableOpacity>
                         <Text style={styles.bookAuthor}>Pierce Brown | Science Fiction</Text>
                     </View>
                 </View>

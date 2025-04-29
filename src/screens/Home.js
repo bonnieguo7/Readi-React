@@ -7,6 +7,12 @@ const Home = ({ navigation }) => {
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
           <Text style={styles.linkText}>Go to Profile</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Read')}>
+          <Text style={styles.linkText}>Go to Read</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('WantToRead')}>
+          <Text style={styles.linkText}>Go to Want to Read</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Recommendations')}>
           <Text style={styles.linkText}>Go to Recommendations</Text>
         </TouchableOpacity>

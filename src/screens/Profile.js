@@ -30,7 +30,7 @@ const Profile = ({ navigation }) => {
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('Want to Read')}>
+        onPress={() => navigation.navigate('WantToRead')}>
         <Text style={styles.buttonText}>Want to Read</Text>
       </TouchableOpacity>
       <TouchableOpacity
